@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+html, body, #root {
+  height: 100%;
+  background: #131727;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+@font-face {
+  font-family: 'vazir';
+  src: url(assets/fonts/vazirmatn/Vazirmatn-Regular.ttf),format('ttf');
+}
+@font-face {
+  font-family: 'rezvan';
+  src: url(assets/fonts/rezvan/Rezvan.ttf),format('ttf');
+}
+@theme{
+  --font-vazir:"vazir",sans-serif;
+  --font-rezvan:'rezvan',sans-serif;
+}
+
+    @keyframes waveHandSmooth {
+      0% {
+        transform: rotate(-5deg) translateX(-3px) translateY(3px);
+        transform-origin: center right;
+      }
+      50% {
+        transform: rotate(5deg) translateX(3px) translateY(-3px);
+        transform-origin: center right;
+      }
+      100% {
+        transform: rotate(-5deg) translateX(-3px) translateY(3px);
+        transform-origin: center right;
+      }
+    }
+
+    .animate-waveHandSmooth {
+      animation: waveHandSmooth 1s ease-in-out infinite; 
+    }
+
+
+
+
+
+
+    @keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-floatUpDown {
+  animation: floatUpDown 2s ease-in-out infinite;
+  will-change: transform;
+}
+
+
+
+@keyframes menuSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuSlideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* حالت باز شدن */
+.menu-open {
+  animation: menuSlideDown 0.4s ease forwards;
+}
+
+/* حالت بسته شدن */
+.menu-close {
+  animation: menuSlideUp 0.3s ease forwards;
+}
