@@ -1,11 +1,3 @@
-// import React from 'react'
-
-// export default function WorkingMethod() {
-//   return (
-//     <div>WorkingMethod</div>
-//   )
-// }
-
 export default function WorkingMethod() {
   const workingMethod = [
     {

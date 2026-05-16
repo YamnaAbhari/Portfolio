@@ -96,11 +96,6 @@ export default function ShowcaseCard() {
         </div>
       </div>
 
-      {/* outer ring */}
-      {/* <div className="pointer-events-none absolute -inset-3 rounded-[2.1rem] 
-                        border border-white/10 opacity-40 blur-[1px]" />
-      </div> */}
     </>
-    //  </div>
   );
 }
