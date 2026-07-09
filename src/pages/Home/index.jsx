@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FiAtSign } from "react-icons/fi";
 import MySkills from "./MySkills";
@@ -6,7 +6,8 @@ import DesignQualitySection from "./DesignQualitySection";
 import WorkingMethod from "./WorkingMethod";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import logo from "../../assets/image/logo.png"
+import logo from "../../assets/image/hero-bg.png"
+
 
 export default function Home() {
   const navigate=useNavigate()
@@ -58,12 +59,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="px-15 py-15 mx-7 lg:mx-0 bg-purple-950/8 backdrop-blur-xl border border-purple-400/30 shadow-[0_0_10px_rgba(168,85,247,0.35)] rounded-3xl">
+        {/* <div className="px-15 py-15 mx-7 lg:mx-0 bg-purple-950/8 backdrop-blur-xl border border-purple-400/30 shadow-[0_0_10px_rgba(168,85,247,0.35)] rounded-3xl"> */}
+        <div className="xl:-mt-18 flex justify-center ">
           <img
             src={logo} alt="logo"
             className="animate-floatUpDown"
           ></img>
-        </div>
+          </div>
+        {/* </div> */}
       </div>
 
       <div className="mt-20 pb-10 ">
